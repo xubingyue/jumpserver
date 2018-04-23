@@ -1,80 +1,61 @@
-## 写在前面
- - 版本号变更 2.0 -> 0.2版本 3.0 -> 0.3版本
+## Jumpserver
 
-#欢迎使用Jumpserver
-**Jumpserver** 是一款由python编写开源的跳板机(堡垒机)系统，实现了跳板机应有的功能。基于ssh协议来管理，客户端无需安装agent。
-支持常见系统:
- 1. CentOS, RedHat, Fedora, Amazon Linux
- 2. Debian
- 3. SUSE, Ubuntu
- 4. FreeBSD
- 5. 其他ssh协议硬件设备
-
-###截图：
-
-首页
- 
-![webterminal](https://github.com/ibuler/static/raw/master/jumpserver3/index.jpg)
-
-WebTerminal:
-
-![webterminal](https://github.com/ibuler/static/raw/master/jumpserver3/webTerminal.gif)
-
-Web批量执行命令
-
-![WebExecCommand](https://github.com/ibuler/static/raw/master/jumpserver3/webExec.gif)
-
-录像回放
-
-![录像](https://github.com/ibuler/static/raw/master/jumpserver3/record.gif)
-
-跳转和批量命令
-
-![跳转](https://github.com/ibuler/static/raw/master/jumpserver3/connect.gif)
-
-命令统计
-
-![跳转](https://github.com/ibuler/static/raw/master/jumpserver3/command.jpg)
-
-### 文档
-
-* [访问wiki](https://github.com/jumpserver/jumpserver/wiki)
-* [概览](https://github.com/jumpserver/jumpserver/wiki/%E6%A6%82%E8%A7%88)
-* [名词解释](https://github.com/jumpserver/jumpserver/wiki/%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A)
-* [常见问题](https://github.com/jumpserver/jumpserver/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
-* 安装基于：[RedHat 的系统](https://github.com/jumpserver/jumpserver/wiki/%E5%9F%BA%E4%BA%8E-RedHat-%E7%9A%84%E7%B3%BB%E7%BB%9F)，[Debian 的系统](https://github.com/jumpserver/jumpserver/wiki/%E5%9F%BA%E4%BA%8E-Debian-%E7%9A%84%E7%B3%BB%E7%BB%9F)
-* [快速开始](https://github.com/jumpserver/jumpserver/wiki/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
-* [安装图解](https://github.com/jumpserver/jumpserver/wiki/%E5%AE%89%E8%A3%85%E5%9B%BE%E8%A7%A3)
-* [应用图解](https://github.com/jumpserver/jumpserver/wiki/%E5%BA%94%E7%94%A8%E5%9B%BE%E8%A7%A3)
-
-### 特点
-
-* 完全开源，GPL授权
-* Python编写，容易再次开发
-* 实现了跳板机基本功能，认证、授权、审计
-* 集成了Ansible，批量命令等
-* 支持WebTerminal
-* Bootstrap编写，界面美观
-* 自动收集硬件信息
-* 录像回放
-* 命令搜索
-* 实时监控
-* 批量上传下载
-
-### 其它
-
-[Jumpserver官网](http://www.jumpserver.org)
-
-[论坛](http://bbs.jumpserver.org)
-
-[demo站点](http://demo.jumpserver.org)
-
-交流群: 399218702
-
-### 团队
-
-![](https://github.com/ibuler/static/raw/master/jumpserver3/team.jpg)
+[![Python3](https://img.shields.io/badge/python-3.6-green.svg?style=plastic)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/django-1.11-brightgreen.svg?style=plastic)](https://www.djangoproject.com/)
+[![Ansible](https://img.shields.io/badge/ansible-2.2.2.0-blue.svg?style=plastic)](https://www.ansible.com/)
+[![Paramiko](https://img.shields.io/badge/paramiko-2.1.2-green.svg?style=plastic)](http://www.paramiko.org/)
 
 
+----
+
+Jumpserver是全球首款完全开源的堡垒机，使用GNU GPL v2.0开源协议，是符合 4A 的专业运维审计系统。
+
+Jumpserver使用Python / Django 进行开发，遵循 Web 2.0 规范，配备了业界领先的 Web Terminal 解决方案，交互界面美观、用户体验好。
+
+Jumpserver采纳分布式架构，支持多机房跨区域部署，中心节点提供 API，各机房部署登录节点，可横向扩展、无并发限制。
+
+改变世界，从一点点开始。
+
+----
+
+### 功能
+  - 统一认证
+  - 资产管理
+  - 统一授权
+  - 审计
+  - 支持LDAP认证
+  - Web terminal
+  - SSH Server
+  - 支持Windows RDP
+
+### 开始使用
+
+快速开始文档  [Docker安装](http://docs.jumpserver.org/zh/latest/quickstart.html)
+
+一步一步安装文档 [详细部署](http://docs.jumpserver.org/zh/latest/step_by_step.html)
+
+也可以查看我们完整文档包括了使用和开发 [文档](http://docs.jumpserver.org)
+
+### Demo 和 截图 
+
+我们提供了DEMO和截图可以让你快速了解Jumpserver
+
+[DEMO](http://demo.jumpserver.org)
+[截图](http://docs.jumpserver.org/zh/docs/snapshot.html)
+
+### SDK 
+
+我们还编写了一些SDK，供你其它系统快速和Jumpserver APi交互，
+
+- [python](https://github.com/jumpserver/jumpserver-python-sdk) Jumpserver其它组件使用这个SDK完成交互
+- [java](https://github.com/KaiJunYan/jumpserver-java-sdk.git) 恺珺同学提供的Java版本的SDK
 
 
+### License & Copyright
+Copyright (c) 2014-2018 Beijing Duizhan Tech, Inc., All rights reserved.
+
+Licensed under The GNU General Public License version 2 (GPLv2)  (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+https://www.gnu.org/licenses/gpl-2.0.html
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
